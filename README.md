@@ -37,7 +37,7 @@ Este proyecto es una aplicación web que permite sumar dos matrices de dimension
 
 ## Uso
 
-1. Ejecutar el servidor:
+1. Inicia el servidor utilizando el comando:
 
    ```bash
    python server.py
@@ -50,4 +50,6 @@ Este proyecto es una aplicación web que permite sumar dos matrices de dimension
 - Node.js: Entorno de ejecución para el servidor.
 - Express: Framework para manejar las solicitudes HTTP.
 - Morgan: Middleware para registrar las solicitudes HTTP.
+- FastAPI: Framework para manejar las solicitudes HTTP.
+- Pydantic: Biblioteca para validar datos
 - HTML, CSS y JavaScript: Para la interfaz de usuario.
