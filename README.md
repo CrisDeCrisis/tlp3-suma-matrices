@@ -5,9 +5,9 @@ Este proyecto es una aplicación web que permite sumar dos matrices de dimension
 ## Requisitos
 
 - Node.js (versión 16 o superior)
-- npm
+- Python 3.x
 
-## Instalación
+## Instalación del servidor JavaScript
 
 1. Clona este repositorio en tu máquina local.
 2. Instala las dependencias ejecutando:
@@ -25,6 +25,25 @@ Este proyecto es una aplicación web que permite sumar dos matrices de dimension
    ```
 
 2. Abre tu navegador y accede a http://localhost:3000.
+
+## Instalación del servidor Python
+
+1. Clona este repositorio en tu máquina local.
+2. Instala las dependencias ejecutando:
+
+   ```bash
+   pip install fastapi uvicorn
+   ```
+
+## Uso
+
+1. Ejecutar el servidor:
+
+   ```bash
+   python server.py
+   ```
+
+2. Abrir el archivo html o ejecutarlo con LiveServer.
 
 ### Tecnologías utilizadas
 
