@@ -8,7 +8,7 @@ async function generarMatrices() {
         if (isNaN(filas) || isNaN(columnas) || filas < 1 || columnas < 1) {
             mostrarError('Por favor ingrese valores válidos para filas y columnas');
             return;
-        }
+        };
 
         document.getElementById('error').textContent = '';
 
@@ -24,8 +24,8 @@ async function generarMatrices() {
         document.getElementById('resultado').style.display = 'none';
     } catch (error) {
         mostrarError('Ocurrió un error al generar las matrices.');
-    }
-}
+    };
+};
 
 function generarInputsMatriz(filas, columnas, prefix) {
     let html = '<table>';
@@ -38,23 +38,8 @@ function generarInputsMatriz(filas, columnas, prefix) {
     }
     html += '</table>';
     return html;
-}
-
-function mostrarResultado(matriz) {
-    const resultadoDiv = document.getElementById('matrizResultado');
-    let html = '<table>';
-    for (let i = 0; i < matriz.length; i++) {
-        html += '<tr>';
-        for (let j = 0; j < matriz[i].length; j++) {
-            html += `<td>${matriz[i][j]}</td>`;
-        }
-        html += '</tr>';
-    }
-    html += '</table>';
-    resultadoDiv.innerHTML = html;
-    document.getElementById('resultado').style.display = 'block';
-}
+};
 
 function mostrarError(mensaje) {
     document.getElementById('error').textContent = mensaje;
-}
+};
